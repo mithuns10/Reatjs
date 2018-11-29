@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <h1>My Github Project</h1>
+        <h1>My Github Prosasasject</h1>
       </div>
     );
   }
