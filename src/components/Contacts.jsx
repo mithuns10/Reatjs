@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 
 class ContactDetails extends Component {
   render() {
+    const { ContactItems } = this.props;
     return (
       <div className="container">
-        <h4>{this.props.Name}</h4>
+        <h4>{ContactItems.Name}</h4>
 
         <ul>
-          <li>Email:{this.props.Email}</li>
-          <li>Phone:{this.props.phone}</li>
+          <li>Email:{ContactItems.Email}</li>
+          <li>Phone:{ContactItems.Phone}</li>
         </ul>
       </div>
     );
