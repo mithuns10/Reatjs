@@ -27,9 +27,9 @@ class AllContacts extends Component {
   render() {
     const { ContactItems } = this.state;
     return (
-      <div>
+      <div className="container">
         {ContactItems.map(Items => (
-          <ContactDetails id={Items.id} ContactItems={Items} />
+          <ContactDetails key={Items.id} ContactItemsss={Items} />
         ))}
       </div>
     );

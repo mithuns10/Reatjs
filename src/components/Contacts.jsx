@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 class ContactDetails extends Component {
   render() {
-    const { ContactItems } = this.props;
+    const { ContactItemsss } = this.props;
     return (
-      <div className="container">
-        <h4>{ContactItems.Name}</h4>
+      <div className="card card-body mb-4">
+        <h4>{ContactItemsss.Name}</h4>
 
-        <ul>
-          <li>Email:{ContactItems.Email}</li>
-          <li>Phone:{ContactItems.Phone}</li>
+        <ul className="list-group">
+          <li className="list-group-item">Email:{ContactItemsss.Email}</li>
+          <li className="list-group-item">Phone:{ContactItemsss.Phone}</li>
         </ul>
       </div>
     );
